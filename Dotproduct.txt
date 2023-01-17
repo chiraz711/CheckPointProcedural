@@ -1,0 +1,48 @@
+function dot_product(v1, v2) {
+    let ps = 0;
+    if (v1.length === v2.length) {
+        for (let i = 0; i < v1.length; i++) {
+            ps += v1[i] * v2[i];
+        }
+    } else {
+        console.log("Error: Vectors have different dimensions!");
+    }
+    return ps;
+}
+function isOrthogonal(vectors) {
+    for (let i = 0; i < vectors.length; i += 2) {
+        let v1 = vectors[i];
+        let v2 = vectors[i+1];
+        let dotProduct = dot_product(v1, v2);
+        if (dotProduct === 0) {
+            console.log(`Vector ${v1} is orthogonal to vector ${v2}`);
+        } else {
+            console.log(`Vector ${v1} is not orthogonal to vector ${v2}`);
+        }
+    }
+}
+
+function dot_product(v1, v2) {
+    let ps = 0;
+    if (v1.length === v2.length) {
+        for (let i = 0; i < v1.length; i++) {
+            ps += v1[i] * v2[i];
+        }
+    } else {
+        console.log("Error: Vectors have different dimensions!");
+    }
+    return ps;
+}
+
+function isOrthogonal(vectors) {
+    for (let i = 0; i < vectors.length; i += 2) {
+        let v1 = vectors[i];
+        let v2 = vectors[i+1];
+        let dotProduct = dot_product(v1, v2);
+        if (dotProduct === 0) {
+            console.log(`Vector ${v1} is orthogonal to vector ${v2}`);
+        } else {
+            console.log(`Vector ${v1} is not orthogonal to vector ${v2}`);
+        }
+    }
+}
